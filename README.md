@@ -32,3 +32,22 @@
 2. Online Courses: Udemy, Coursera, LinkedIn Learning often have good SQL and PL/SQL courses.
 3. YouTube Tutorials: Many channels offer free lessons.
 4. Books: Look for highly-rated books on SQL and PL/SQL (e.g., "SQL Fundamentals" or "Oracle PL/SQL Programming" by Steven Feuerstein).
+
+### Project Structure For Now:
+
+		ankit-sql/
+		├── src/
+		│   ├── tables/
+		│   │   └── # Your table creation scripts go here
+		│   ├── functions/
+		│   │   └── # Your function scripts go here
+		│   ├── procedures/
+		│   │   └── # Your procedure scripts go here
+		│   └── packages/
+		│       └── # Your package scripts go here (spec and body)
+		├── scripts/
+		│   └── install.sql           # This will be your main deployment script
+		├── README.md
+		└── .gitignore
+
+

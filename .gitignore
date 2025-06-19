@@ -1,0 +1,12 @@
+# SQL Developer files
+*.dws
+*.jpr
+*.jpx
+*.user
+*.settings
+.project
+.sqldev/
+
+# Operating system generated files
+.DS_Store
+Thumbs.db

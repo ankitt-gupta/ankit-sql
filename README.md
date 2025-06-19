@@ -50,4 +50,39 @@
 		├── README.md
 		└── .gitignore
 
+### Target Structure
+
+		my-plsql-project/
+		├── .git/                     # Git repository internal files (managed by Git)
+		├── .github/                  # (Optional) For GitHub Actions workflows, issue templates etc.
+		│   └── workflows/
+		│       └── build_and_test.yml # CI/CD for PL/SQL
+		├── src/
+		│   ├── packages/
+		│   │   ├── my_package.pks    # Package specification
+		│   │   └── my_package.pkb    # Package body
+		│   ├── functions/
+		│   │   └── my_function.sql   # Function definition
+		│   ├── procedures/
+		│   │   └── my_procedure.sql  # Procedure definition
+		│   ├── views/
+		│   │   └── my_view.sql       # View definition
+		│   ├── tables/
+		│   │   └── my_table.sql      # Table creation script
+		│   └── triggers/
+		│       └── my_trigger.sql    # Trigger definition
+		├── scripts/
+		│   ├── install.sql           # Master script to run all SQL files in order
+		│   ├── uninstall.sql         # Script to drop objects
+		│   └── data/                 # Sample data or lookup data
+		│       └── seed_data.sql
+		├── tests/                    # (Optional) For unit tests (e.g., utPLSQL)
+		│   ├── ut_my_package.sql
+		│   └── run_tests.sql
+		├── docs/                     # (Optional) Documentation files
+		│   └── architecture.md
+		├── README.md                 # Project overview, setup instructions
+		├── .gitignore                # Files to ignore (e.g., editor specific files, binaries)
+		└── LICENSE                   # (Optional) Licensing information
+
 
